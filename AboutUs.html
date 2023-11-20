@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title></title>
+	<link rel = "stylesheet" type = "text/css" href = "CSS/aboutus.css">
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		var options = {};
+    		if (document.location.search) {
+    			var array = document.location.search.split('=');
+    			var param = array[0].replace('?','');
+    			var value = array[1];
+    			if (param == 'animation'){
+    				options.animation = value;
+    			}
+    			else if (param == 'type_navigaton'){
+    				if (value == 'dots_preview'){
+    					$('.border_box').CSS({'marginBottom':'40px'});
+    					options['dots'] = true;
+    					options['preview'] = true;
+    				}
+    				else {
+    					options[value] = true;
+    					if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+    				}
+    			}
+    		}
+    		$('.box_skitter_large').skitter(options);
+    		//Highlight
+    		$('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+    	});
+    </script>
+</head>
+<body>
+	<div class = "Container">
+		<div class = "headcon">
+			<div class = "logo">
+				<img src = "images/logo1.png" alt ="" width = "300" height = "110" /> 
+			</div>
+			<div class ="headright"><br>
+				<small> For more information, please call:</small></br>
+				<label> 123-456-7890</label>
+
+			</div>
+		</div>
+		<div class = "navbg">
+			<div class = "nav_inside">
+				<ul> 
+					<li><a href ="index.html">Home</a></li>
+					<li><a href ="AboutUs.html">About Us</a></li>
+					<li><a href ="Services.html">Services</a></li>
+					<li><a href ="Careers.html">Careers</a></li>
+					<li><a href ="Resources.html">Resources</a></li>
+					<li><a href ="Contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class ="flashcon">
+		<div class ="box_skitter box_skitter_large" style= "z-index:0;">
+			<ul>
+        <li> <a href="#blindHeight"><img src = "./images/flash1.jpg"  class="random"/></a></li>
+        <li> <a href="#blindHeight"><img src = "./images/flash2.jpg"  class="random"/></a></li>
+        <li> <a href="#blindHeight"><img src = "./images/flash3.jpg"  class="random"/></a></li>
+      </ul>
+		</div>
+	</div>
+	<div class = "midboxcon">
+		<div class = "midbox1">
+			<img src = "images/midbox1.jpg" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox2">
+			<img src = "images/midbox2.jpg" alt ="" width = "333" height = "187" /> 
+		</div>
+		<div class = "midbox3">
+			<img src = "images/midbox3.jpg" alt ="" width = "334" height = "187" /> 
+		</div>
+  </div>
+    <div class="about-section">
+  <h1>ROCKS</h1>
+  <p>Rock, in geology, naturally occurring and coherent aggregate of one or more minerals. Such aggregates constitute the basic unit of which the solid Earth is composed and typically form recognizable and mappable volumes. Rocks are commonly divided into three major classes according to the processes that resulted in their formation. These classes are (1) igneous rocks, which have solidified from molten material called magma; (2) sedimentary rocks, those consisting of fragments derived from preexisting rocks or of materials precipitated from solutions; and (3) metamorphic rocks, which have been derived from either igneous or sedimentary rocks under conditions that caused changes in mineralogical composition, texture, and internal structure. These three classes, in turn, are subdivided into numerous groups and types on the basis of various factors, the most important of which are chemical, mineralogical, and textural attributes.</p>
+  <h1>Three Types of Rock 
+Rocks fall into these three groups:
+Igneous , Sedimentary , and Metamorphic</h1>
+  <p>SIgneous rocks are formed from melted rock deep inside the Earth.</p>
+  <p>Sedimentary rocks are formed from layers of sand, silt, dead plants, and animal skeletons.</p>
+  <p>Metamorphic rocks formed from other rocks that are changed by heat and pressure underground.</p>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/ab1.png" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>Igneous rock</h2>
+        <p>Igneous rock, or magmatic rock, is one of the three main rock types, the others being sedimentary and metamorphic. Igneous rocks are formed through the cooling and solidification of magma or lava.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/ab2.jpg" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>Sedimentary rocks </h2>
+        <p>Sedimentary rocks are types of rock that are formed by the accumulation or deposition of mineral or organic particles at Earth's surface, followed by cementation. Sedimentation is the collective name for processes that cause these particles to settle in place.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/ab3.jpg" alt="" style="width:100%">
+      <div class="aboutus">
+        <h2>Metamorphic rock</h2>
+        <p>Metamorphic rocks arise from the transformation of existing rock to new types of rock in a process called metamorphism. The original rock is subjected to temperatures greater than 150 to 200 °C and, often, elevated pressure of 100 megapascals or more, causing profound physical or chemical changes.</p>
+      </div>
+    </div>
+  </div>
+     <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUS.html">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Resources</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+
+    </ul>
+   <p><b>&copy;2023 STONE | Quimson Eduardo</b></p>
+     <p>For School Project Purpose Only</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</footer>
+
+  </div>
+</div>
+</body>
+</html>
